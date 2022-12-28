@@ -1,6 +1,12 @@
+:root {
+ --title-color: #2E2F42;
+ --text-color: #434455;
+}
+
 body {
-font-family: "Roboto";
+font-family: "Roboto". sans-serif;
 color: #434455;
+background-color: #FFFFFF;
 }
 
 .link {
@@ -95,6 +101,11 @@ color: #434455;
     cursor: pointer;
 }
 
+.button:hover,
+.button:focus {
+    background-color: #404BBF;
+}
+
 
 /*----------------ADVANTAGES-----------------*/
 
@@ -102,24 +113,24 @@ color: #434455;
 
 }
 
-.adv-list {
+.advantages-list {
 
 }
  
-.adv-title {
+.advantages-title {
     font-weight: 600;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--title-color);
 }
 
-.adv-text {
+.aadvantages-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--text-color);
 }
 
 /*----------------WHAT WE DO-----------------*/
@@ -135,7 +146,7 @@ line-height: 1.11;
 text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
-color: #2E2F42;
+color: var(--title-color);
 }
 
 /*----------------TEAM-----------------*/
@@ -151,7 +162,7 @@ color: #2E2F42;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2E2F42;
+    color: var(--title-color);
     
 }
 
@@ -165,7 +176,7 @@ color: #2E2F42;
     line-height: 24px;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--title-color);
 }
 
 .team-text {
@@ -174,7 +185,7 @@ color: #2E2F42;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--text-color);
 }
 
 /*----------------FOOTER-----------------*/
@@ -214,9 +225,21 @@ color: #2E2F42;
 
 /*-------------PORTFOLIO--------------*/
 
-.portfolio {
-    background-color: #E5E5E5;
-}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+
 
 .portfolio-button {
     font-family: inherit;
@@ -238,9 +261,6 @@ color: #2E2F42;
     background-color: #4D5AE5;
 }
 
-.portfolio-item {
-    background-color: #FFFFFF;
-}
 
 
 .portfolio-title {
@@ -248,7 +268,7 @@ color: #2E2F42;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--title-color);
 }
 
 .portfolio-text {
@@ -256,5 +276,5 @@ color: #2E2F42;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--text-color);
 }
